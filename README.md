@@ -37,4 +37,9 @@ L'application frontend sera maintenant en fonctionnement et accessible à l'adre
 Assurez-vous que l'API backend (Spring Boot) soit en cours d'exécution sur http://localhost:8080 pour que les appels à l'API soient correctement traités.
 ![image](https://github.com/user-attachments/assets/43dbe350-31d7-4ac1-9075-ecb349238395)
 ![image](https://github.com/user-attachments/assets/ec01c652-9346-4cbf-acac-ea38ad8ff3a3)
+![image](https://github.com/user-attachments/assets/00986763-ae13-4428-be1e-109db6134867)
+![image](https://github.com/user-attachments/assets/3cf5526d-1309-43b6-9cd1-afb13beeec33)![image](https://github.com/user-attachments/assets/70f28429-11fd-48bc-b1d9-d22b30275bd2)
+
+![image](https://github.com/user-attachments/assets/6c5bfdf8-7edf-46b8-9a77-358bcd7c39e6)![image](https://github.com/user-attachments/assets/21edcd90-ecd5-4a02-822b-cf05983eeb59)
+
 
