@@ -1,27 +1,40 @@
 # PatientFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
-## Development server
+## Serveur de développement
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Exécutez ng serve pour démarrer un serveur de développement. Rendez-vous sur http://localhost:4200/. L'application se rechargera automatiquement si vous modifiez un des fichiers sources.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Exécutez ng build pour construire le projet. Les fichiers générés seront stockés dans le répertoire dist/.
 
-## Running unit tests
+# Lee instructions pour tester le projet frontend (Angular) localement :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Prérequis :
+Node.js installé (version recommandée : LTS)
+npm (gestionnaire de paquets Node.js) installé
+IDE comme Visual Studio Code ou tout autre éditeur de texte de votre choix
+Étapes :
+Clonez le projet depuis GitHub :
 
-## Running end-to-end tests
+## git clone https://github.com/FallouNdiaye/patient-front.git
+Installez les dépendances du projet : Ouvrez un terminal dans le répertoire du projet cloné et exécutez la commande suivante pour installer les dépendances :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm install --force
+Démarrez le serveur de développement Angular : Dans le terminal, exécutez la commande suivante pour démarrer l'application :
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng serve
+Accédez à l'application : Une fois l'application démarrée, ouvrez votre navigateur et accédez à l'URL suivante :
+
+http://localhost:4200
+L'application frontend sera maintenant en fonctionnement et accessible à l'adresse http://localhost:4200, prête à interagir avec l'API backend pour la gestion des patients.
+
+## Notes :
+Assurez-vous que l'API backend (Spring Boot) soit en cours d'exécution sur http://localhost:8080 pour que les appels à l'API soient correctement traités.
+![image](https://github.com/user-attachments/assets/43dbe350-31d7-4ac1-9075-ecb349238395)
+![image](https://github.com/user-attachments/assets/ec01c652-9346-4cbf-acac-ea38ad8ff3a3)
+
