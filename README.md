@@ -11,7 +11,7 @@ Exécutez ng serve pour démarrer un serveur de développement. Rendez-vous sur 
 
 Exécutez ng build pour construire le projet. Les fichiers générés seront stockés dans le répertoire dist/.
 
-# Lee instructions pour tester le projet frontend (Angular) localement :
+# instructions pour tester le projet frontend (Angular) localement :
 
 ## Prérequis :
 Node.js installé (version recommandée : LTS)
