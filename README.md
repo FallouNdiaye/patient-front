@@ -15,22 +15,30 @@ Exécutez ng build pour construire le projet. Les fichiers générés seront sto
 
 ## Prérequis :
 Node.js installé (version recommandée : LTS)
+
 npm (gestionnaire de paquets Node.js) installé
+
 IDE comme Visual Studio Code ou tout autre éditeur de texte de votre choix
+
 Étapes :
 Clonez le projet depuis GitHub :
 
 ## git clone https://github.com/FallouNdiaye/patient-front.git
-Installez les dépendances du projet : Ouvrez un terminal dans le répertoire du projet cloné et exécutez la commande suivante pour installer les dépendances :
+Installez les dépendances du projet : 
+
+Ouvrez un terminal dans le répertoire du projet cloné et exécutez la commande suivante pour installer les dépendances :
 
 npm install --force
-Démarrez le serveur de développement Angular : Dans le terminal, exécutez la commande suivante pour démarrer l'application :
+Démarrez le serveur de développement Angular : 
+
+Dans le terminal, exécutez la commande suivante pour démarrer l'application :
 
 
 ng serve
 Accédez à l'application : Une fois l'application démarrée, ouvrez votre navigateur et accédez à l'URL suivante :
 
 http://localhost:4200
+
 L'application frontend sera maintenant en fonctionnement et accessible à l'adresse http://localhost:4200, prête à interagir avec l'API backend pour la gestion des patients.
 
 ## Notes :
