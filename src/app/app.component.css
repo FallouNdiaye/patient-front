@@ -1,0 +1,27 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .grid-container {
+    padding: 16px; /* Adds padding around content */
+    box-sizing: border-box; /* Ensures padding is included in dimensions */
+  }
+  .hospital-logo {
+    height: 40px; /* Adjust height as needed */
+    margin: auto;
+    display: block;
+  }  

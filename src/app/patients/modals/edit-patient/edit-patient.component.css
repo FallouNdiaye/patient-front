@@ -1,0 +1,48 @@
+.add-patient-page {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .form-card {
+    max-width: 800px;
+    width: 100%;
+    padding: 16px;
+  }
+  .card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .half-width {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 200px;
+  }
+  
+  .full-width {
+    flex: 1 1 100%;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .mat-raised-button {
+    font-weight: bold;
+  }
+  
+  .mat-error {
+    font-size: 12px;
+    color: red;
+  }
+  

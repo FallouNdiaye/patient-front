@@ -1,0 +1,31 @@
+.dashboard-content {
+    padding: 16px;
+  }
+  
+  .patient-details {
+    display: grid;
+    grid-gap: 16px;
+  }
+  
+  .patient-card {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-table {
+    margin-top: 16px;
+    overflow-x: auto;
+  }
+  
+  .full-width-table {
+    width: 100%;
+  }
+  
+  .mat-header-cell, .mat-cell {
+    text-align: left;
+  }
+  
+  .mat-header-row, .mat-row {
+    background-color: #f9f9f9;
+  }
+  

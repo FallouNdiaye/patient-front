@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">Modifier le contact du patient</mat-toolbar>
+<form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+  <mat-card>
+    <mat-card-content>
+      <h3>Contacts</h3>
+      
+          <div class="form-group">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Fixe</mat-label>
+            <input matInput formControlName="fixe" />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Mobile</mat-label>
+            <input matInput formControlName="mobile" />
+          </mat-form-field>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Enregistrer</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

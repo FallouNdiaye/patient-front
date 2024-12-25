@@ -1,0 +1,99 @@
+<div class="add-patient-page">
+    <mat-card class="form-card">
+      <mat-card-title class="card-title">Ajouter un Patient</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <!-- First Name -->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Prénom</mat-label>
+              <input matInput formControlName="prenom" placeholder="Enter first name" />
+              <mat-error *ngIf="patientForm.get('prenom')?.hasError('required')">
+                Prénom est obligatoire
+              </mat-error>
+            </mat-form-field>
+  
+            <!-- Last Name -->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Nom</mat-label>
+              <input matInput formControlName="nom" placeholder="Enter last name" />
+              <mat-error *ngIf="patientForm.get('nom')?.hasError('required')">
+                Nom est obligatoire
+              </mat-error>
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            
+         <mat-form-field appearance="outline" class="half-width">
+             <mat-label>Date de Naissance</mat-label>
+               <input matInput [matDatepicker]="picker"  formControlName="dateNaissance" />
+             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+             <mat-datepicker #picker></mat-datepicker>
+             <mat-error *ngIf="patientForm.get('dateNaissance')?.hasError('required')">
+                Date de naissance est obligatoire
+             </mat-error>
+           </mat-form-field>
+  
+            <!-- Gender -->
+            <mat-form-field class="half-width" appearance="outline">
+              <mat-label>Sexe</mat-label>
+              <mat-select formControlName="sexe">
+                <mat-option value="Masculin">Masculin</mat-option>
+                <mat-option value="Féminin">Féminin</mat-option>
+                
+              </mat-select>
+              <mat-error *ngIf="patientForm.get('sexe')?.hasError('required')">
+                Sexe
+              </mat-error>
+            </mat-form-field>
+          </div>
+         
+        
+          
+          
+          
+  
+          <div class="form-group">
+            <!-- Height -->
+            <mat-form-field class="half-width" appearance="outline">
+              <mat-label>Taille (m)</mat-label>
+              <input matInput type="number" formControlName="taille" placeholder="e.g., 1.75" />
+            </mat-form-field>
+  
+            <!-- Weight -->
+            <mat-form-field class="half-width" appearance="outline">
+              <mat-label>Poids (kg)</mat-label>
+              <input matInput type="number" formControlName="poids" placeholder="e.g., 70" />
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            <!-- Mobile -->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Mobile</mat-label>
+              <input matInput formControlName="mobile" placeholder="Enter mobile number" />
+            </mat-form-field>
+  
+            <!-- Email -->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" placeholder="Enter email address" />
+              <mat-error *ngIf="patientForm.get('email')?.hasError('email')">
+                Email est obligatoire
+              </mat-error>
+            </mat-form-field>
+          </div>
+  
+          <!-- Submit Button -->
+          <div class="form-actions">
+            <button mat-raised-button color="primary" type="submit" [disabled]="patientForm.invalid">
+              Ajouter un Patient
+            </button>
+            <button mat-button color="warn" type="button" (click)="onCancel()">Annuler</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

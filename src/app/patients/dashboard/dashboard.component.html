@@ -1,0 +1,30 @@
+  
+      <div class="dashboard-content">
+        <!-- Cards Section -->
+        
+        <div class="grid-container">
+        
+          <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+            <!--Mini Cards-->
+            <mat-grid-tile *ngFor="let mc of miniCardData" [colspan]="( cardLayout | async )?.miniCard!.cols"
+              [rowspan]="( cardLayout | async )?.miniCard!.rows">
+              <app-mini-card [icon]="mc.icon" [title]="mc.title" [value]="mc.value" [color]="mc.color"   ></app-mini-card>
+            </mat-grid-tile>
+        
+          </mat-grid-list>
+        </div>
+  
+        <!-- Chart Section -->
+        <div class="charts-row">
+          
+        </div>
+  
+        <!-- Orders Section -->
+        <div class="orders-section">
+          <app-card title="Liste des Patients">
+            <app-orders-table></app-orders-table>
+          </app-card>
+        </div>
+      </div>
+  
+  

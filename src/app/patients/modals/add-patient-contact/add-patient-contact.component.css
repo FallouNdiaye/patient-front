@@ -1,0 +1,5 @@
+.scrollable-content {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-right: 8px; /* Add padding for scrollbar clearance */
+  }

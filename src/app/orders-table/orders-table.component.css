@@ -1,0 +1,19 @@
+.mat-elevation-z8 {
+  height: 100%;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.full-width-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+table {
+  width: 100%;
+}
+
+mat-paginator {
+  margin-top: 16px;
+}

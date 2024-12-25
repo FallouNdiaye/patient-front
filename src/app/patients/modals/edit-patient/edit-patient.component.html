@@ -1,0 +1,52 @@
+<div class="add-patient-page">
+    <mat-card class="form-card">
+      <mat-card-title class="card-title">Edit Patient</mat-card-title>
+
+
+<mat-dialog-content>
+  <form [formGroup]="editForm">
+    <div class="form-group">
+    <mat-form-field appearance="fill"class="full-width">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="nom" />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Prénom</mat-label>
+      <input matInput formControlName="prenom" />
+    </mat-form-field>
+     <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Date de Naissance</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dateNaissance" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    </div>
+   
+    <div class="form-group">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Sexe</mat-label>
+      <mat-select formControlName="sexe">
+        <mat-option value="Homme">Homme</mat-option>
+        <mat-option value="Femme">Femme</mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>
+<div class="form-group">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Taille (m)</mat-label>
+      <input matInput formControlName="taille" type="number" />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Poids (kg)</mat-label>
+      <input matInput formControlName="poids" type="number" />
+    </mat-form-field>
+</div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Annuler</button>
+  <button mat-button color="primary" (click)="save()">Enregistrer</button>
+</mat-dialog-actions>
+
+</mat-card>
+</div>
