@@ -29,12 +29,13 @@ Installez les dépendances du projet :
 Ouvrez un terminal dans le répertoire du projet cloné et exécutez la commande suivante pour installer les dépendances :
 
 npm install --force
+
 Démarrez le serveur de développement Angular : 
 
 Dans le terminal, exécutez la commande suivante pour démarrer l'application :
 
-
 ng serve
+
 Accédez à l'application : Une fois l'application démarrée, ouvrez votre navigateur et accédez à l'URL suivante :
 
 http://localhost:4200
